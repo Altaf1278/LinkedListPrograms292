@@ -82,7 +82,11 @@ public class LL {
         }
     }
 
-
+    public void pop() {
+        if (head != null) {
+            head = head.next;
+        }
+    }
 
     public void printList() {
 
