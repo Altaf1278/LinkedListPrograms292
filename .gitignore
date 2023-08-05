@@ -1,0 +1,4 @@
+*.git        
+.idea  
+LinkedListPrograms.iml  
+out
