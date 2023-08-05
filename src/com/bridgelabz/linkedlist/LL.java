@@ -68,6 +68,20 @@ public class LL {
         lastNode.next = newNode;
 
     }
+    public void insertAfter(String prevData, String newData) {
+        Node newNode = new Node(newData);
+        Node prevNode = head;
+
+        while (prevNode != null) {
+            if (prevNode.data.equals(prevData)) {
+                newNode.next = prevNode.next;
+                prevNode.next = newNode;
+                break;
+            }
+            prevNode = prevNode.next;
+        }
+    }
+
 
 
     public void printList() {
